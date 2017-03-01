@@ -1,8 +1,7 @@
 services:
   graphqlapibundle.service.graphqlschema:
     class: GraphqlApiBundle\Service\GraphqlSchema
-    arguments:
-      - doctrine.orm.entity_manager
+    arguments: doctrine.orm.entity_manager
     calls:
       - [loadSchema]
 
